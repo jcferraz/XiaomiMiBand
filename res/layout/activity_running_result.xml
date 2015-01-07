@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/main_ui_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.view.ViewPager android:id="@id/vp_result" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/dot_ll" android:paddingBottom="@dimen/running_pace_dot_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:id="@id/dot1" android:background="@drawable/slidable_dot_focused" android:visibility="invisible" android:layout_width="8.5dip" android:layout_height="8.5dip" android:layout_marginRight="8.5dip" />
+            <View android:id="@id/dot2" android:background="@drawable/slidable_dot_normal" android:visibility="invisible" android:layout_width="8.5dip" android:layout_height="8.5dip" android:layout_marginLeft="8.5dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/head_back" layout="@layout/title_back" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/share_pane_container" android:layout_width="fill_parent" android:layout_height="@dimen/running_share_pane_margin" />
+</FrameLayout>
